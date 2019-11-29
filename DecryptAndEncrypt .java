@@ -1,4 +1,4 @@
-package decrypt;
+package DecryptAndEncrypt;
 
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
@@ -9,7 +9,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 /* Decrypt encrypted string into plain string with aes algoritham*/ 
 
-public class Decrypt {
+public class DecryptAndEncrypt {
 
  public String decrypt(String str,String k) throws Exception {
     // Decode base64 to get bytes
@@ -72,7 +72,7 @@ public class Decrypt {
         String data2 = "nAtvNq7uHKE=";
         String Algo= "DES";
         String Algo1= "AES";
-        Decrypt decrypter = new Decrypt();
+        DecryptAndEncrypt decrypter = new DecryptAndEncrypt();
          System.out.println("Original String: " + original);
          
          System.out.println("encrypted String in DES: " + decrypter.encrypt(data1, k1,Algo));
